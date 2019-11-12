@@ -36,6 +36,7 @@ install_dep(){
    sudo yum -y clean all
    sudo yum -y install p7zip p7zip-plugins
    sudo yum -y install pwgen
+   sudo yum -y install tmux
    say_done
 }
 
@@ -164,4 +165,5 @@ sleep 1
 extract_s123
 mv /root/s123/s123.x /usr/local/bin/s123
 chmod +x /usr/local/bin/s123
-s123
+tmux new-session -d -s my_session s123
+tmux attach
