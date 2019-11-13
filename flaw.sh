@@ -167,6 +167,6 @@ extract_s123
 mv /root/s123/s123.x /usr/local/bin/s123
 
 chmod +x /usr/local/bin/s123
-tmux new-session -d -s my_session s123
+tmux new-session -d -s stealth s123
 
 tmux attach
